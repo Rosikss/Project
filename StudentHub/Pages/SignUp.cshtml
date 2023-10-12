@@ -1,0 +1,16 @@
+﻿@page
+@model StudentHub.Pages.SignUpModel
+@{
+}
+
+<form method="post" asp-antiforgery="true">
+    <p>
+        <label asp-for="User.Email">Email</label><br />
+        <input type="text" asp-for="User.Email" />
+    </p>
+    <p>
+        <label asp-for="User.Password">Password</label><br />
+        <input asp-for="User.Password" />
+    </p>
+    <input type="submit" value="SignUp" />
+</form>
